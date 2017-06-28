@@ -27,6 +27,7 @@ RUN apk --no-cache add \
     cd /OpenSprinkler && \
     ln -s /data/stns.dat && \
     ln -s /data/nvm.dat && \
+    ln -s /data/ifkey.txt && \
     ln -s /data/logs
 COPY --from=build-img /OpenSprinkler-Firmware-master/OpenSprinkler /OpenSprinkler/OpenSprinkler
 WORKDIR /OpenSprinkler
